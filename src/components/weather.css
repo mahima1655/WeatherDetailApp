@@ -46,3 +46,52 @@
 .weather .getweather:focus {
   outline: none;
 }
+
+.error-msg {
+  color: #c0392b;
+  border: 1px dashed #c0392b;
+  border-radius: 8px;
+  padding: 8px 14px;
+  margin-top: 12px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  width: fit-content;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 2px dashed rgb(2, 57, 88);
+  border-radius: 0 0 10px 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  min-width: 200px;
+}
+
+.dropdown-item {
+  padding: 8px 10px;
+  cursor: pointer;
+  border-bottom: 1px dashed #ccc;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(2, 57, 88);
+}
+
+.dropdown-item:hover {
+  background: rgb(2, 57, 88, 0.1);
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
